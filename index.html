@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <h1>Primeiro App</h1>
+    <p>Bem Vindo  {{nome}} - {{idade}}</p>
+
+    <a v-bind:href="canal">Github</a>
+</div>
+
+<script>
+    new Vue({
+        el:'#app', //puxando o elemento
+        data(){
+            return{
+                nome: 'Vitor De Farias Metzner',
+                canal:'https://github.com/vitorfarias001'
+                
+            }
+        }
+    })
+</script>
